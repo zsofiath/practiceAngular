@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 
@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
   template: ''
 })
 export class TooltipSelectMock {
-
+  @Input() defaultText;
   constructor() { }
 
   ngOnInit() {

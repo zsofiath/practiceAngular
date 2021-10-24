@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-tooltip-select',
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TooltipSelectComponent implements OnInit {
 
+  @Input() defaultText: string;
   constructor() { }
 
   ngOnInit() {
